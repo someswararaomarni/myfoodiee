@@ -8,7 +8,8 @@ import { useState } from 'react';
 import { useStore } from '../../store/store';
 import toast, {Toaster} from 'react-hot-toast';
 
-export default function Pizza(pizza) {
+
+export default function Pizza({pizza}) {
     
     const src=urlFor(pizza.image).url();
     const [Size,setSize]=useState(1);
