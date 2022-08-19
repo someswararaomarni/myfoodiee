@@ -112,7 +112,8 @@ export async function getStaticPaths() {
       fallback: true,
     };
   }
-export async function getStaticProps({ params: {slug} }) {
+export async function getStaticProps(context) {
+    const { slug = "" } = context.params;
     const pizza = await client.fetch(
       `
       *[_type == "pizza" && slug.current == $slug][0]
