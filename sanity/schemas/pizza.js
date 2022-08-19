@@ -4,8 +4,8 @@ export default{
     type:"document",
     fields:[
         {
-            name:'imageo',
-            title:'imageo',
+            name:'image',
+            title:'image',
             type:'image',
             options:{
                 hotspot:true
