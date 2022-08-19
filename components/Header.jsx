@@ -4,7 +4,7 @@ import   logo from '../assets/Logo.png';
 import {UilShoppingBag,UilReceipt} from '@iconscout/react-unicons';
 import { useStore } from '../store/store';
 import { useEffect, useState } from 'react';
-import Link from 'next/Link';
+import Link from 'next/link';
 export default function Header() {
    //state in terminal
    const [Order,setOrder]=useState("");
