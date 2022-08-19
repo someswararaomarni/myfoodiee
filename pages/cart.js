@@ -64,7 +64,7 @@ export default function Cart() {
                 <tbody className={css.tbody}>
                     {CartData.pizzas.length > 0 &&
                      CartData.pizzas.map((pizza, i)=> {
-                         const src = urlFor(pizza.image).url()
+                         const src = urlFor(pizza.imageo).url()
                          return(
                             <tr key={i}>
                             <td className={css.imageTd}>
