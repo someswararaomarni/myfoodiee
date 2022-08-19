@@ -1,11 +1,11 @@
 export default{
     name: 'pizza',
-    title:"pizza",
+    title:"Pizza",
     type:"document",
     fields:[
         {
             name:'image',
-            title:'image',
+            title:'Image',
             type:'image',
             options:{
                 hotspot:true
@@ -13,13 +13,13 @@ export default{
         },
         {
             name:'name',
-            title:'name',
+            title:'Name',
             type:'string',
            
         },
         {
             name:'slug',
-            title:'slug',
+            title:'Slug',
             type:'slug', 
             options:{
                 source:'name',
@@ -29,13 +29,13 @@ export default{
         },
         {
             name:'price',
-            title:'price',
+            title:'Price',
             type:'array',
             of: [{type: 'number'}]
         },
         {
             name:'details',
-            title:'details',
+            title:'Details',
             type:'string'
         }
     ]

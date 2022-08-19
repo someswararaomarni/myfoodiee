@@ -8,8 +8,8 @@ import { useState } from 'react';
 import { useStore } from '../../store/store';
 import toast, {Toaster} from 'react-hot-toast';
 export default function Pizza({pizza}) {
-    const img=pizza.image;
-    const src=urlFor(img).url();
+    
+    const src=urlFor(pizza.image).url();
     const [Size,setSize]=useState(1);
     const [Quantity,setQuantity]=useState(1);
 
@@ -124,6 +124,6 @@ export async function getStaticProps(context) {
     return {
       props: {
         pizza,
-      },
+      }
     };
   }
