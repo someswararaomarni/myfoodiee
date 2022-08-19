@@ -9,7 +9,7 @@ import { useStore } from '../../store/store';
 import toast, {Toaster} from 'react-hot-toast';
 export default function Pizza({pizza}) {
     
-    const src=urlFor(pizza.image).url();
+    const src=urlFor(pizza.imageo).url();
     const [Size,setSize]=useState(1);
     const [Quantity,setQuantity]=useState(1);
 
